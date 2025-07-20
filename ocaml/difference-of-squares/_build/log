@@ -1,0 +1,17 @@
+# dune exec difference_of_squares.ml
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/alto64/.cache/dune/db
+# Workspace root:
+# /home/alto64/workspace/github.com/MateuszSzczukiewicz/exercism/ocaml/difference-of-squares
+# Auto-detected concurrency: 4
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/alto64/.opam/default/bin/ocamlc.opt -config > /tmp/dune_32df4c_output

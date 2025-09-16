@@ -41,7 +41,7 @@ void count_nodes(node_t *node, int *count) {
     return;
   }
 
-  (*count)++;
+  (count)++;
 
   count_nodes(node->left, count);
   count_nodes(node->right, count);

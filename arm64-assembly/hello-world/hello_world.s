@@ -1,9 +1,9 @@
-.section .rodata
-msg: .string "Hello, World!"
+.data
+msg: .asciz "Hello, World!"
 
 .text
-.global hello
-hello:
-        adrp    x0, msg
-        add     x0, x0, :lo12:msg
+.global _hello
+_hello:
+        adrp    x0, msg@PAGE
+        add     x0, x0, msg@PAGEOFF
         ret

@@ -1,22 +1,30 @@
 PLATFORM = $(shell uname -m)
 
 ifneq ($(PLATFORM),aarch64)
+ifneq ($(UNAME_S),Darwin)
 ifeq ($(origin AS),default)
-AS = aarch64-linux-gnu-as
+AS = aarch64-elf-as
 endif
 ifeq ($(origin CC),default)
-CC = aarch64-linux-gnu-gcc
+CC = aarch64-elf-gcc
+endif
 endif
 endif
 
-CFLAGS ?= -g -Wall -Wextra -pedantic -Werror -std=c99 -fPIE
+CFLAGS ?= -g -Wall -Wextra -std=c99
+
+ifeq ($(UNAME_S),Darwin)
+CFLAGS += -fPIE
+else
+CFLAGS += -pedantic -Werror
+endif
 LDFLAGS ?= -pie -Wl,--fatal-warnings
 
 C_OBJS = $(patsubst %.c,%.o,$(wildcard *.c))
 AS_OBJS = $(patsubst %.s,%.o,$(wildcard *.s))
 ALL_OBJS = $(filter-out example.o,$(C_OBJS) $(AS_OBJS) vendor/unity.o)
 
-CC_CMD = $(CC) $(ALL_CFLAGS) -c -o $@ $<
+CC_CMD = $(CC) $(CFLAGS) -c -o $@ $<
 
 ifeq ($(PLATFORM),aarch64)
 	MAYBE_QEMU ?=

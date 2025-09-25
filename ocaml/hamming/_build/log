@@ -14,7 +14,7 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/alto64/.opam/default/bin/ocamlc.opt -config > /var/folders/f1/v2nzyr_s6ggc4r07_xd6vylw0000gn/T/dune_427651_output
+$ /Users/alto64/.opam/default/bin/ocamlc.opt -config > /var/folders/f1/v2nzyr_s6ggc4r07_xd6vylw0000gn/T/dune_b042da_output
 $ (cd _build/default && /Users/alto64/.opam/default/bin/ocamldep.opt -modules -impl test.ml) > _build/default/.test.eobjs/test.impl.d
 $ (cd _build/default && /Users/alto64/.opam/default/bin/ocamldep.opt -modules -intf hamming.mli) > _build/default/.test.eobjs/hamming.intf.d
 $ (cd _build/default && /Users/alto64/.opam/default/bin/ocamldep.opt -modules -impl hamming.ml) > _build/default/.test.eobjs/hamming.impl.d

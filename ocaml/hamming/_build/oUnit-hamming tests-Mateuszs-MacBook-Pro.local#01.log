@@ -1,9 +1,15 @@
-2025-09-21T20:36:19+00:00 Mateuszs-MacBook-Pro.local#01 I: Start test hamming tests:0:empty strands.
-2025-09-21T20:36:19+00:00 Mateuszs-MacBook-Pro.local#01 I: Test hamming tests:0:empty strands is successful.
-2025-09-21T20:36:19+00:00 Mateuszs-MacBook-Pro.local#01 I: End test hamming tests:0:empty strands.
-2025-09-21T20:36:19+00:00 Mateuszs-MacBook-Pro.local#01 I: Start test hamming tests:4:long different strands.
-2025-09-21T20:36:19+00:00 Mateuszs-MacBook-Pro.local#01 I: Test hamming tests:4:long different strands is successful.
-2025-09-21T20:36:19+00:00 Mateuszs-MacBook-Pro.local#01 I: End test hamming tests:4:long different strands.
-2025-09-21T20:36:19+00:00 Mateuszs-MacBook-Pro.local#01 I: Start test hamming tests:7:disallow empty first strand.
-2025-09-21T20:36:19+00:00 Mateuszs-MacBook-Pro.local#01 I: Test hamming tests:7:disallow empty first strand is successful.
-2025-09-21T20:36:19+00:00 Mateuszs-MacBook-Pro.local#01 I: End test hamming tests:7:disallow empty first strand.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Start test hamming tests:0:empty strands.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Test hamming tests:0:empty strands is successful.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: End test hamming tests:0:empty strands.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Start test hamming tests:3:long identical strands.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Test hamming tests:3:long identical strands is successful.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: End test hamming tests:3:long identical strands.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Start test hamming tests:4:long different strands.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Test hamming tests:4:long different strands is successful.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: End test hamming tests:4:long different strands.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Start test hamming tests:6:disallow second strand longer.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Test hamming tests:6:disallow second strand longer is successful.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: End test hamming tests:6:disallow second strand longer.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Start test hamming tests:8:disallow empty second strand.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: Test hamming tests:8:disallow empty second strand is successful.
+2025-09-21T20:46:01+00:00 Mateuszs-MacBook-Pro.local#01 I: End test hamming tests:8:disallow empty second strand.

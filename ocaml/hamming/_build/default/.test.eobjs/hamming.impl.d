@@ -1,1 +1,1 @@
-hamming.ml:
+hamming.ml: Result

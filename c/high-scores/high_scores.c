@@ -31,9 +31,11 @@ size_t personal_top_three(const int32_t *scores, size_t scores_len,
     if (i == 0)
     {
       biggest_scores[0] = scores[0];
-    } else if (biggest_scores[i - 1] && scores[i] > biggest_scores[i - 1])
+    }
+    else if (biggest_scores[i - 1] && scores[i] > biggest_scores[i - 1])
     {
-      do {
+      do
+      {
         biggest_scores[i] = biggest_scores[i - 1];
         biggest_scores[i - 1] = scores[i];
       } while (i >= 2 && scores[i] > biggest_scores[i - 2]);

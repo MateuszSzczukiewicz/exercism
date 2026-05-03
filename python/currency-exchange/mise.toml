@@ -1,0 +1,3 @@
+[tools]
+gcc-arm-none-eabi = "latest"
+odin = { version = "latest", exe = "odin" }

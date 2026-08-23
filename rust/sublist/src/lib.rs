@@ -6,8 +6,22 @@ pub enum Comparison {
     Unequal,
 }
 
+fn is_sublist(first_list: &[i32], second_list: &[i32]) -> bool {
+    first_list.is_empty()
+        || (first_list.len() <= second_list.len()
+            && second_list
+                .windows(first_list.len())
+                .any(|window| window == first_list))
+}
+
 pub fn sublist(first_list: &[i32], second_list: &[i32]) -> Comparison {
-    todo!(
-        "Determine if the {first_list:?} is equal to, sublist of, superlist of or unequal to {second_list:?}."
-    );
+    if first_list == second_list {
+        Comparison::Equal
+    } else if is_sublist(second_list, first_list) {
+        Comparison::Superlist
+    } else if is_sublist(first_list, second_list) {
+        Comparison::Sublist
+    } else {
+        Comparison::Unequal
+    }
 }
